@@ -543,8 +543,39 @@ ul li a { text-decoration:none; }
   margin: 22px auto;
 }
 .views-field-field-slide-picture {
-	float:left;
+  width: 480px;
+  float: left;
+  display: inline-block;
+  margin-right: 5px;
+  padding: 3px;
+  padding-bottom: 0;
 }
-.view_id_slideshow .views-field-body {
+.view-id-slideshow .views-field-body {
   float: right;
+  width: 430px;
+  height: 270px;
+  overflow: hidden;
+  float: left;
+  display: inline-block;
+  background: transparent url("../images/slide-text-block.jpg") no-repeat left top;
+  color: #FFF;
+  text-align: left;
+}
+
+.view-id-slideshow {
+  width: 930px;
+  border: solid 10px #FFF;
+  background: url("images/sectionbg.png") repeat scroll 0 0 transparent;
+}
+
+.pane-slideshow {
+  padding-bottom: 41px;
+  background: url("images/shadow.png") no-repeat scroll center bottom transparent;
+}
+
+.view-slideshow .views-slideshow-control-bottom {
+  position: absolute;
+  top: 237px;
+  right: 105px;
+  z-index: 1000;
 }
