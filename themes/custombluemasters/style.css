@@ -542,6 +542,9 @@ ul li a { text-decoration:none; }
   text-align: center;
   margin: 22px auto;
 }
+.views-field-field-slide-picture {
+	float:left;
+}
 .view_id_slideshow .views-field-body {
   float: right;
 }
