@@ -63,31 +63,7 @@
        
     </div><!--EOF:header-->
 
-    <div id="banner">
-    <?php print render($page['banner']); ?>
-    
-        <div class="main_view">
-            <div class="window">
-                <div class="image_reel">
-                    <a href="<?php print url('node/3'); ?>"><img src="<?php print base_path() . drupal_get_path('theme', 'bluemasters') . '/images/slide-image-3.jpg'; ?>"></a>
-                    <a href="<?php print url('node/2'); ?>"><img src="<?php print base_path() . drupal_get_path('theme', 'bluemasters') . '/images/slide-image-2.jpg'; ?>"></a>
-                    <a href="<?php print url('node/1'); ?>"><img src="<?php print base_path() . drupal_get_path('theme', 'bluemasters') . '/images/slide-image-1.jpg'; ?>"></a>
-                </div>
-                <div class="descriptions">
-                    <div class="desc" style="display: none;">About Bluemasters</div>
-                    <div class="desc" style="display: none;">Our Portfolio</div>
-                    <div class="desc" style="display: none;">Creation of Beaches</div>
-                </div>
-            </div>
-        
-            <div class="paging">
-                <a rel="1" href="#">1</a>
-                <a rel="2" href="#">2</a>
-                <a rel="3" href="#">3</a>
-            </div>
-        </div>
-    </div><!--EOF:banner-->
-
+    <div id="main"  class="inside clearfix"><?php print render($page['content']); ?></div>
     <div id="home-blocks-area" class="clearfix">
     
 		<?php if ($messages): ?>
@@ -144,12 +120,9 @@
     	<div id="footer-bottom-inside-right">
 		<?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'inline', 'clearfix')))); ?>
     	</div>
-    	<div class="credits-container" style="clear:both; padding-top:12px;">Ported to Drupal for the Open Source Community by <a href="http://www.drupalizing.com">Drupalizing</a>, a Project of <a href="http://www.morethanthemes.com">More than Themes</a></div>     
+    	   
     </div>
-    <div class="credits-container clearfix">
-        <a title="Brought To You By: www.SmashingMagazine.com" class="smashing" href="http://www.smashingmagazine.com" target="_blank">Brought to you By: www.SmashingMagazine.com</a>
-        <a title="Drupalizing" class="drupalizing" href="http://www.drupalizing.com" target="_blank">Drupalizing</a> 
-    </div>  
+    
 </div>
 <!--EOF:footer-bottom-->
 
