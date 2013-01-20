@@ -659,6 +659,11 @@ body.front #main {
   float: left;
 }
 
+.field-name-field-blog-image {
+  display: inline-block;
+  float: left;
+}
+
 html.CSS1Compat body {
   background-image: none;
   background-color: #FFF;
