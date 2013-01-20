@@ -3,11 +3,11 @@ body, div, span, p, a, img, ul, ol, li, table, th, tr, td, form, fieldset, legen
 
 body { padding: 0; background: transparent url(images/bg.gif) repeat; font: 12px/1.4 Verdana, Helvetica, sans-serif; font-size: 12px; color: #666666;  text-align: center;  }
 
-a {color:#1b8bb4; text-decoration:none; border:none;}
+a {color:#6A7796; text-decoration:none; border:none;}
 
-a:link, li a.active {color:#1b8bb4; text-decoration:none; border:none;}
+a:link, li a.active {color:#6A7796; text-decoration:none; border:none;}
 
-a:hover {color:#1b8bb4; text-decoration: underline; border:none;}
+a:hover {color:#6A7796; text-decoration: underline; border:none;}
 
 img a { border:none; }
 
@@ -25,7 +25,7 @@ h5 { font-size:100%; }
 
 h1.title { border-bottom:1px dotted #84a1af; margin:0 0 20px 0; }
 
-.node h2 a { color:#1c8cb5; font-size: 26px; }
+.node h2 a { color: #7A8090; font-size: 26px; text-decoration: none; }
 
 p { margin:0 0 10px 0; }
 
@@ -152,7 +152,7 @@ min-height:100px; overflow:hidden; clear:both; }
 
 #home-blocks-area .region-home-area-3 .block h2 { background:url(images/icons/phone-icon.png) no-repeat 13px 10px; padding:10px 0 0 49px; }
 
-#home-blocks-area .block .content { background:url(images/sectionbg.png); padding:20px; display:block; overflow:hidden; 
+#home-blocks-area .block .content { background:url(images/sectionbg.png); padding:20px; display:block; overflow:hidden; min-height: 110px;
 font-family:  Arial, Helvetica, Sans Serif; font-size: 14px; color: #6a7796; }
 
 #home-blocks-area .block .content h1, 
@@ -195,9 +195,9 @@ min-height:100px; }
 
 #footer a { color:#417893; }
 
-#footer a:link, #footer li a.active { color:#417893; }
+#footer a:link, #footer li a.active { color:#6A7796; text-decoration: none; }
 
-#footer a:hover { color:#417893; }
+#footer a:hover { color:#6A7796; }
 
 #footer h2{ color: #8c94ac; background: transparent; font-size:22px; padding:0 0 10px 0; }
 
@@ -328,7 +328,7 @@ ul.menu li { margin: 0 0 0.25em 1.5em; padding: 0; }
 
 ul li.leaf { list-style-type: disc; list-style-image:none; }
 
-ul.inline li.node-readmore, ul.inline li.comment-add { background: #11719F; border: none; color: #FFFFFF; float: right; font-weight: bold; margin: 10px 0 0 10px;  cursor:pointer; 
+ul.inline li.node-readmore, ul.inline li.comment-add { background: #2F3951; border: none; color: #FFFFFF; float: right; font-weight: bold; margin: 10px 0 0 10px;  cursor:pointer; 
 font-family: Arial, Verdana, Helvetica, sans-serif; padding:10px; }
 
 .node-readmore a, .comment-add a, .comment-add a.active { color:#ffffff; padding:10px; }
@@ -553,7 +553,7 @@ ul li a { text-decoration:none; }
 .view-id-slideshow .views-field-body {
   float: right;
   width: 390px;
-  height: 220px;
+  height: 210px;
   overflow: hidden;
   float: left;
   display: inline-block;
@@ -561,13 +561,14 @@ ul li a { text-decoration:none; }
   color: #FFF;
   text-align: left;
   padding: 20px 20px 10px;
-  font-size: 1.075em;
+  font-size: 14px;
 }
 
 .view-id-slideshow {
   width: 930px;
   border: solid 10px #FFF;
-  background: url("images/sectionbg.png") repeat scroll 0 0 transparent;
+  background: url("images/sectionbg.png") repeat scroll 0 0 #0F131F;
+  position: relative;
 }
 
 .pane-slideshow {
@@ -577,8 +578,8 @@ ul li a { text-decoration:none; }
 
 .view-slideshow .views-slideshow-controls-bottom {
   position: absolute;
-  top: 540px;
-  right: 465px;
+  bottom: 20px;
+  right: 155px;
   z-index: 1000;
 }
 body.logged-in .view-slideshow .views-slideshow-controls-bottom {
@@ -605,31 +606,49 @@ body.logged-in .view-slideshow .views-slideshow-controls-bottom {
 .view-slideshow .views-slideshow-controls-bottom span#views_slideshow_controls_text_previous_slideshow-block a, .view-slideshow .views-slideshow-controls-bottom span#views_slideshow_controls_text_next_slideshow-block a {
 text-decoration: none;
 color: #FFF;
-background-color: #B28F65;
+background-color: #49546C;
 padding: 3px 5px;
 border-radius: 3px;
 }
 body.front {
  color: #fff;
- }
- body.front div.content {
- font: 15px Verdana,Helvetica,sans-serif;
- }
- div.pane-block h2{
-	padding: 15px 45px 15px 0;
-	text-align: left;
- }
- fieldset#webform-component-phone-fieldset {
+}
+body.front div.content {
+  font: 15px Verdana,Helvetica,sans-serif;
+}
+div.pane-block h2{
+  padding: 15px 45px 15px 0;
+  text-align: left;
+}
+fieldset#webform-component-phone-fieldset {
   padding: 0;
- }
- fieldset#webform-component-phone-fieldset legend {
+}
+fieldset#webform-component-phone-fieldset legend {
   font-weight: bold;
- }
- .fieldset-wrapper div#webform-component-phone-fieldset--phone, div#webform-component-phone-fieldset--phone-extention {
+}
+.fieldset-wrapper div#webform-component-phone-fieldset--phone, div#webform-component-phone-fieldset--phone-extention {
   display: inline-block;
   margin-top: 0;
   margin-bottom: 0;
- }
- #webform-component-phone-fieldset--phone-extention div.description {
+}
+#webform-component-phone-fieldset--phone-extention div.description {
   padding-left: 30px;
- }
+}
+ 
+body.front .panel-2col-stacked .center-wrapper {
+  background: url("images/home-block-box-bg.png") repeat scroll 0 0 transparent;
+  clear: both;
+  display: block;
+  overflow: hidden;
+  padding: 20px;  
+  margin-bottom: 20px;
+}
+
+body.front #main {
+  padding: 0;
+}
+
+.panel-col-first img {
+  padding: 5px;
+  border: solid 1px #FFF;
+}

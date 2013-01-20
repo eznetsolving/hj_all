@@ -11,10 +11,10 @@
         <!--header-top-inside-left-feed-->
         <div id="header-top-inside-left-feed">
             <div id="topSocial">
-            <ul>									
-                <li><a class="twitter" href="http://twitter.com/morethanthemes" title="Follow Us on Twitter!"></a></li>
-                <li><a class="facebook" href="http://www.facebook.com/pages/More-than-just-themes/194842423863081" title="Join Us on Facebook!"></a></li>
-                <li><a class="rss" title="RSS" href="#" title="Subcribe to Our RSS Feed"></a></li>
+            <ul>					
+                <li><a class="facebook" href="https://www.facebook.com/pages/HJ-Ehrlich-Buying-Group/190428404335002" title="Join Us on Facebook!"></a></li>            
+                <li><a class="twitter" href="" title="Follow Us on Twitter!"></a></li>               
+                <!--<li><a class="rss" title="RSS" href="#" title="Subcribe to Our RSS Feed"></a></li>-->
             </ul>
             </div>
         </div>
@@ -64,7 +64,13 @@
     </div><!--EOF:header-->
 
     <div id="main"  class="inside clearfix"><?php print render($page['content']); ?></div>
-    <div id="home-blocks-area" class="clearfix">
+
+</div><!--EOF:wrapper-->
+
+<!--footer-->
+<div id="footer">
+    <div id="footer-inside" class="clearfix">
+        <div id="home-blocks-area" class="clearfix">
     
 		<?php if ($messages): ?>
         <div id="console" class="clearfix">
@@ -83,13 +89,6 @@
             <?php print render($page['home_area_3_b']);?> 
         </div>
     </div>
-
-</div><!--EOF:wrapper-->
-
-<!--footer-->
-<div id="footer">
-    <div id="footer-inside" class="clearfix">
-    
     	<div id="footer-left">
     		<div id="footer-left-1">
     			<?php print render($page['footer_left_1']);?>

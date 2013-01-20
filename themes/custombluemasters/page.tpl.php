@@ -11,10 +11,10 @@
         <!--header-top-inside-left-feed-->
         <div id="header-top-inside-left-feed">
             <div id="topSocial">
-            <ul>									
-                <li><a class="twitter" href="http://twitter.com/morethanthemes" title="Follow Us on Twitter!"></a></li>
-                <li><a class="facebook" href="http://www.facebook.com/pages/More-than-just-themes/194842423863081" title="Join Us on Facebook!"></a></li>
-                <li><a class="rss" title="RSS" href="#" title="Subcribe to Our RSS Feed"></a></li>
+            <ul>					
+                <li><a class="facebook" href="https://www.facebook.com/pages/HJ-Ehrlich-Buying-Group/190428404335002" title="Join Us on Facebook!"></a></li>            
+                <li><a class="twitter" href="" title="Follow Us on Twitter!"></a></li>               
+                <!--<li><a class="rss" title="RSS" href="#" title="Subcribe to Our RSS Feed"></a></li>-->
             </ul>
             </div>
         </div>
@@ -109,12 +109,14 @@
             <div id="network" class="block">
                 <h2>Network Connect</h2>  
                 <div class="network">
-                    <a href="http://twitter.com/morethanthemes" class="twitter">Twitter</a>
-                    <a href="http://www.facebook.com/pages/More-than-just-themes/194842423863081" class="facebook">Facebook</a>
+                    <a href="https://www.facebook.com/pages/HJ-Ehrlich-Buying-Group/190428404335002" class="facebook">Facebook</a>
+                    <!--
+                    <a href="http://twitter.com/morethanthemes" class="twitter">Twitter</a>                
                     <a href="http://www.flickr.com/photos/56103643@N07/" class="flickr">Flickr</a>
                     <a href="#" class="in">In</a>
                     <a href="#" class="tumblr">Tumblr</a>
                     <a href="http://www.youtube.com/morethanthemes" class="youtube">Youtube</a>
+                    -->
                 </div>
             </div>
                 
@@ -132,7 +134,25 @@
 <!--footer-->
 <div id="footer">
     <div id="footer-inside" class="clearfix">
+        <div id="home-blocks-area" class="clearfix">
     
+		<?php if ($messages): ?>
+        <div id="console" class="clearfix">
+        <?php print $messages; ?>
+        </div>
+        <?php endif; ?>
+    
+        <div class="home-block-area first">
+            <?php print render($page['home_area_1']);?> 		
+        </div>
+        <div class="home-block-area">
+            <?php print render($page['home_area_2']);?> 
+        </div>
+        <div class="home-block-area last">
+            <?php print render($page['home_area_3']);?> 
+            <?php print render($page['home_area_3_b']);?> 
+        </div>
+    </div>    
     	<div id="footer-left">
     		<div id="footer-left-1">
     			<?php print render($page['footer_left_1']);?>
