@@ -180,12 +180,14 @@
     	<div id="footer-bottom-inside-left">
     		<?php print render($page['footer']);?>
     	</div>
+		<div id="copyright">&copy; <?php echo date("Y"); ?> HJ Ehrlich Buying Group</div>
     	<div id="footer-bottom-inside-right">
 		<?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'inline', 'clearfix')))); ?>
     	</div>
-    	  
+    	   
     </div>
-    </div>
+    
+</div>
 <!--EOF:footer-bottom-->
 
 </div><!--EOF:page-->
