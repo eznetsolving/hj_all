@@ -193,7 +193,7 @@ min-height:100px; }
 
 #footer-right{ float:left; width: 300px; padding-left: 14px; }
 
-#footer a { color:#417893; }
+#footer a { color:#6A7796; }
 
 #footer a:link, #footer li a.active { color:#6A7796; text-decoration: none; }
 
@@ -253,7 +253,7 @@ div.field-type-taxonomy-term-reference .field-label { float:left; display:block;
 div.field-type-taxonomy-term-reference .field-items .field-item { float:left; display:block; padding:0 5px ;}
 
 
-.node .content img { border: 1px solid #ced1da; background: #eef0f5; padding: 4px; margin:20px 0; }
+.node .content img { border: 1px solid #ced1da; background: #eef0f5; padding: 4px; margin:0 10px 5px 0; }
 
 
 /*
@@ -650,5 +650,17 @@ body.front #main {
 
 .panel-col-first img {
   padding: 5px;
-  border: solid 1px #FFF;
+  border: solid 1px #445480;
+  background-color: #191F2F;
+}
+
+.node-page .field-type-image {
+  display: inline-block;
+  float: left;
+}
+
+html.CSS1Compat body {
+  background-image: none;
+  background-color: #FFF;
+  color: #000;
 }
