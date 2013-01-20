@@ -619,3 +619,17 @@ body.front {
 	padding: 15px 45px 15px 0;
 	text-align: left;
  }
+ fieldset#webform-component-phone-fieldset {
+  padding: 0;
+ }
+ fieldset#webform-component-phone-fieldset legend {
+  font-weight: bold;
+ }
+ .fieldset-wrapper div#webform-component-phone-fieldset--phone, div#webform-component-phone-fieldset--phone-extention {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+ }
+ #webform-component-phone-fieldset--phone-extention div.description {
+  padding-left: 30px;
+ }
