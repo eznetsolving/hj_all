@@ -582,12 +582,6 @@ ul li a { text-decoration:none; }
   right: 155px;
   z-index: 1000;
 }
-body.logged-in .view-slideshow .views-slideshow-controls-bottom {
-  position: absolute;
-  top: 267px;
-  right: 160px;
-  z-index: 1000;
-}
 
 .view-slideshow .views-slideshow-controls-bottom span#views_slideshow_controls_text_pause_slideshow-block {
  display: none;
